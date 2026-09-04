@@ -1,0 +1,87 @@
+/* Backdrop */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Modal box */
+.modal_content {
+  position: relative;
+  background:#161616ed;
+  color: #fff;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  padding-bottom: 24px;
+  
+}
+
+/* Close button */
+.modal_close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.modal_close:hover {
+  background: #E50914;
+}
+
+/* Trailer wrapper */
+.trailer_wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  background: #000;
+}
+
+/* react-youtube renders a div wrapping the iframe with this class */
+.modal_trailer {
+  width: 100% !important;
+  height: 450px !important;
+  display: block;
+}
+
+.modal_trailer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Text content below trailer */
+.modal_content h2 {
+  font-size: 1.5rem;
+  margin: 16px 24px 8px;
+}
+
+.modal_content p {
+  margin: 6px 24px;
+  color: #d2d2d2;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

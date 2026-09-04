@@ -1,19 +1,37 @@
+@media (max-width: 768px) {
+  .banner_title {
+    font-size: 2rem;
+  }
+  .banner_description {
+    font-size: 0.9rem;
+    height: auto;
+  }
+}
+
 .banner {
   color: white;
-  object-fit: contain;
-  height: 448px;
-  position: relative;
+  object-fit:fill;
+  min-height: 65vh;
+  max-height: 65vh;
   padding: 60px 30px;
+  background-repeat: no-repeat;
+  position:relative;
+   background: linear-gradient(to bottom, #111, #fff);
 }
 
 .banner_contents {
-  max-width: 600px;
-}
 
+  max-width: 600px;
+  padding: 4rem;
+}
+ 
 .banner_title {
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 0.3rem;
+  margin-bottom: .5rem;
+  line-height: normal;
+  
+
 }
 
 .banner_description {
@@ -21,17 +39,49 @@
   line-height: 1.3;
   max-width: 45rem;
   height: 80px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .banner--fadeBottom {
-  height: 7.4rem;
+  height: 9rem;
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.75),
     #000
   );
   position: absolute;
-  bottom: 0;
-  width: 100%;
+bottom: -2px;
+left: 0;
+right: 0;
+
+
 }
+.banner-buttons{
+  display: flex;
+  gap:10px;
+}
+#watch-banner-btn, #add-list-btn{
+  height: 38px;
+  font-size: large;
+   font-weight:300;
+  background-color:#E50914;
+ color:#F5F5F1;
+ border: #000;
+ border-radius: .5rem;
+padding: 10px;
+}
+#watch-banner-btn:hover, #add-list-btn:hover{
+  height: 38px;
+  font-size: large;
+   font-weight:300;
+  background-color:#fbfbfb;
+ color:#E50914;
+ border: #000;
+ border-radius: .5rem;
+padding: 10px;
+  transition: 0.15s ease-in-out;
+}
+
+
