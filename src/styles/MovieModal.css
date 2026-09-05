@@ -21,6 +21,7 @@
   background:#161616ed;
   color: #fff;
   width: 90%;
+  scrollbar-width: none;
   max-width: 800px;
   max-height: 90vh;
   overflow-y: auto;

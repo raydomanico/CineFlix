@@ -1,5 +1,5 @@
 import Row from "./components/Row";
-import requests from "./api/requests";
+import requests from "./api/import.meta.env.VITE_TMDB_KEY";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "../api/axios";
-import requests from "../api/requests";
+import requests from "../api/import.meta.env.VITE_TMDB_KEY";
 import "../styles/Banner.css";
 import MovieModal from "./MovieModal";
 
